@@ -11,18 +11,18 @@ body {
     margin-top: 120px;
 }
 
-.block {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: blue;
-}
-
 .user {
     position: absolute;
     width: 100px;
     height: 20px;
-    background-color: purple;
+    background-image: linear-gradient(to right bottom, #c115e9, #a612c8, #8b0ea8, #720b89, #59086b);
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-image: linear-gradient(to right bottom, #6fbaec, #66abd9, #5d9cc6, #558db3, #4c7fa1);
 }
 
 .ball {
@@ -30,7 +30,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.623);
 }
 
 .game {
