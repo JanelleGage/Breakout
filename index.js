@@ -1,5 +1,4 @@
-/* TODO: Update styling
-    add button to start game, 
+/* TODO: Update styling 
     increase number of blocks and grid size
     increase speed of ball
 
@@ -11,8 +10,8 @@ const scoreDisplay = document.querySelector('#score')
 const blockWidth = 100
 const blockHeight = 20
 const ballDiameter = 20
-const boardWidth = 560
-const boardHeight = 300
+const boardWidth = 760
+const boardHeight = 500
 let xDirection = -2
 let yDirection = 2
 
@@ -119,7 +118,12 @@ function moveBall() {
     drawBall()
     checkForCollisions()
 }
-timerId = setInterval(moveBall, 30)
+
+
+function startGame() {
+  document.addEventListener('keydown', moveUser)
+  timerId = setInterval(moveBall, 30)
+}
 
 //check for collisions
 function checkForCollisions() {
