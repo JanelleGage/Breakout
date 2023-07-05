@@ -1,10 +1,3 @@
-/* TODO: Update styling 
-    increase number of blocks and grid size
-    increase speed of ball
-
-*/
-
-
 const grid = document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
 const blockWidth = 100
@@ -169,7 +162,7 @@ function moveBall() {
 
 function startGame() {
   document.addEventListener('keydown', moveUser)
-  timerId = setInterval(moveBall, 30)
+  timerId = setInterval(moveBall, 20)
 }
 
 //check for collisions
